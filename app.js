@@ -14,4 +14,11 @@ app.get("/test", (req, res) => {
   });
 });
 
+app.get("/home", (req, res) => {
+  res.json({
+    status: true,
+    message: "Welcome to dating app",
+  });
+});
+
 app.listen(PORT, () => console.log(`Server is active on ${PORT}`));
